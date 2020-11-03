@@ -1,0 +1,15 @@
+.foot{
+    font-size: 25px;
+    color: white;
+    border:2px solid red;
+    position: relative;
+    top:100px;
+    width:100%;
+    margin:auto;
+    justify-content: center;
+}
+
+a{
+    font-size: 25px;
+    color: white;
+}

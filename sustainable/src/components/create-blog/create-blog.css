@@ -1,0 +1,19 @@
+.crt-blog-cont{
+    background-color: white;
+    height:100vh;
+    color: black;
+}
+
+.form-group label{
+    color:black;
+}
+
+.form-group input{
+    color: black;
+    
+}
+
+.form-control{
+    color: blue;
+    background-color: white;
+}
