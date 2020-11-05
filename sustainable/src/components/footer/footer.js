@@ -9,6 +9,8 @@ export default class Footer extends Component {
                 <div className="row foot mt-100">
                     <a href="/blog">Blog</a>
                     <a href="/birds">Birds</a>
+                    <a href="/air-api">Air</a>
+                
                 </div>
             </div>
         )

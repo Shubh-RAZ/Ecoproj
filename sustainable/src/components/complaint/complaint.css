@@ -24,18 +24,8 @@ form{
     height:100%;
 }
 
-input{
-    width:40%;
-    border-radius:27px;
-    opacity:0.5;
-}
-
 label{
     width:70%;
-}
-
-.form-group{
-    color:white;
 }
 
 .icon input{

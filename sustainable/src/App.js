@@ -15,6 +15,7 @@ import Blogs from './components/blogs/blogs';
 import Footer from './components/footer/footer';
 import CreateBlog from './components/create-blog/create-blog';
 import Birds from './components/birds/birds';
+import Airfront from './components/airquality/airfront';
 
 
 export default class App extends Component {
@@ -36,7 +37,7 @@ export default class App extends Component {
           <Route path="/hydro" exact component={Hydro}/>
           <Route path="/geothermal" exact component={Geothermal}/>
           <Route path="/create-blog" exact component={CreateBlog}/>
-
+          <Route path="/air-api" exact component={Airfront}/>
         </switch>
         
       </div>        

@@ -20,7 +20,7 @@ export default class Blogs extends Component {
     }
 
     getBlogPost = () => {
-        axios.get('http://localhost:4000/blogs')
+        axios.get('http://localhost:5000/blogs')
         .then( (res) => {
             const data = res.data;
             this.setState({ posts:data });

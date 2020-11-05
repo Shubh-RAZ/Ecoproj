@@ -88,7 +88,7 @@ export default class CreateBlog extends Component {
 
 
 
-        axios.post('http://localhost:4000/blogs/create-blog', newBlog)
+        axios.post('http://localhost:5000/blogs/create-blog', newBlog)
             .then(res => console.log(res));
 
         this.setState({

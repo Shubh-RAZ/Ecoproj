@@ -1,0 +1,16 @@
+.Air-cont{
+    color:white;
+    background-color:black;
+}
+
+input[type="text"]::placeholder {
+    color:white; 
+    font-size:15px;
+    letter-spacing: 2px;
+    opacity: 1;
+} 
+
+input{
+    background-color: white;
+    color:black;
+}

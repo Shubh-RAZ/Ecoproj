@@ -75,7 +75,7 @@ export default class Complaint extends Component {
       Message: this.state.Message
     }
 
-    axios.post('http://localhost:4000', newData) 
+    axios.post('http://localhost:4000/data', newData) 
       .then(res => console.log(res.data));
 
     this.setState({
