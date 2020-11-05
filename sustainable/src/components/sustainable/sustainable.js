@@ -4,7 +4,6 @@ import './sustainable.css';
 import '../../../node_modules/font-awesome/css/font-awesome.min.css';
 import '../navbar/navbar';
 import Navbar from '../navbar/navbar';
-import BirdAnimation from './../bird-animation/bird-animation';
 
 
 export default class Sustainable extends Component {
@@ -12,7 +11,7 @@ export default class Sustainable extends Component {
     
   render() {
     return (
-      <div>
+      <div className="sus-row">
        
         <div class="row upr">
           <img className="img4" src="/front.png" alt="#"></img>
@@ -23,7 +22,7 @@ export default class Sustainable extends Component {
         
         </div>
         <div className="container-fluid whole">
-        <div className="bird"><BirdAnimation></BirdAnimation></div>
+        
           <div className="row cont">
             <div className="col-md-6 col-sm-12 lfts">
               <div className="lft-rw row">

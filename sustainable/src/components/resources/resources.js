@@ -12,7 +12,7 @@ export default class Resources extends Component {
     
   render() {
     return (
-      <div>
+      <div className="res-row">
         
         <div className="res ">
           <div className="row renewable rw">

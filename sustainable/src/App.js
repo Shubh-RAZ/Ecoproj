@@ -20,14 +20,14 @@ import Birds from './components/birds/birds';
 export default class App extends Component {
   render() {
     return (
-      <div>
+      <div className="app-div">
 
         {Hydro}
 
         <switch>
           <Route path="/" exact component={Sustainable} />
-          <Route path="/" exact component={Resources}/>
-          <Route path='/' exact component={Complaint}/>
+         <Route path="/" exact component={Resources}/>
+          <Route path='/' exact component={Complaint}/> 
           <Route path="/" exact component={Footer} />
           <Route path='/blog' exact component={Blogs}/>
           <Route path="/solar" exact component={Solar}/>

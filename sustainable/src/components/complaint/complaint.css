@@ -3,10 +3,14 @@
     width:100%;
     border:2px solid rgb(106,90,205);
     background:linear-gradient(0deg,#000,#262626,#000);
-    position: relative;
-    top:70px;
     border-radius:27px;
     padding:15px;
+}
+
+.comp-rw{
+    position: relative;
+    top:20px;
+    background-color: black;
 }
 
 form{

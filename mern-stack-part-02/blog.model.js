@@ -20,6 +20,8 @@ let Blog = new Schema({
     blog_des2: {
         type: String
     },
+
+    
 });
 
 module.exports = mongoose.model('Blog', Blog);

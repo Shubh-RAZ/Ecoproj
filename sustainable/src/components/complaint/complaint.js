@@ -1,35 +1,118 @@
 import React, { Component } from 'react';
-import '../../../node_modules/bootstrap/dist/css/bootstrap.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import './complaint.css';
-import '../../../node_modules/font-awesome/css/font-awesome.min.css';
+import axios from 'axios';
 
 
 export default class Complaint extends Component {
+  
+  constructor(props) {
+    super(props);
+
+    this.onChangeFirstName = this.onChangeFirstName.bind(this);
+    this.onChangeLastName = this.onChangeLastName.bind(this);
+    this.onChangeMail = this.onChangeMail.bind(this);
+    this.onChangePhone = this.onChangePhone.bind(this);
+    this.onChangeMessage = this.onChangeMessage.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
+
+
+
+    this.state = {
+      First_Name: '',
+      Last_Name: '',
+      Mail: '',
+      Phone: '',
+      Message: ''
+    }
+  }
+  
+  onChangeFirstName(event) {
+    this.setState({
+      First_Name: event.target.value
+    });
+  }
+
+  onChangeLastName(event) {
+    this.setState({
+      Last_Name: event.target.value
+    });
+  }
+
+  onChangeMail(event) {
+    this.setState({
+      Mail: event.target.value
+    });
+  }
+
+  onChangePhone(event) {
+    this.setState({
+      Phone: event.target.value
+    });
+  }
+
+  onChangeMessage(event) {
+    this.setState({
+      Message: event.target.value
+    });
+  }
+  
+  onSubmit(event) {
+    event.preventDefault();
+
+    console.log(`Form submitted: `);
+    console.log(`First Name: ${this.state.First_Name}`);
+    console.log(`Last Name: ${this.state.Last_Name}`);
+    console.log(`Mail: ${this.state.Mail}`);
+    console.log(`Phone: ${this.state.Phone}`);
+    console.log(`Message: ${this.state.Message}`);
+
+    const newData = {
+      First_Name: this.state.First_Name,
+      Last_Name: this.state.Last_Name,
+      Mail: this.state.Mail,
+      Phone: this.state.Phone,
+      Message: this.state.Message
+    }
+
+    axios.post('http://localhost:4000', newData) 
+      .then(res => console.log(res.data));
+
+    this.setState({
+      First_Name: '',
+      Last_Name: '',
+      Mail: '',
+      Phone: '',
+      Message: ''
+    })
+  }
+
+
   render() {
     return (
     <div>
-        <div className="row">
+        <div className="row comp-rw">
             <div className="col-md-8 offset-md-2 complaint-box">
             <div className="signin-form col-6">
-              <form action="" method="post">
+              <form action="connect.php" method="post" onSubmit = {this.onSubmit}>
 
                 <div className="form-group">
                   <div className ="icon-name">
-                    <input type="text" className="form-control" name="First Name" placeholder="First Name" autocomplete="off" required></input>
-                    <input type="text" className="form-control" name="Last Name" placeholder="Last Name" autocomplete="off" required></input>
+                    <input type="text" className="form-control" name="First_Name" placeholder="First Name" autocomplete="off" required value = {this.state.First_Name} onChange = {this.onChangeFirstName}></input>
+                    <input type="text" className="form-control" name="Last_Name" placeholder="Last Name" autocomplete="off" required value = {this.state.Last_Name} onChange = {this.onChangeLastName}></input>
                   </div>
                 </div>
 
                 <div className="form-group">
                     <div className="icon-name">
-                      <input type="text" className="form-control" name="Mail" placeholder="E-Mail" autocomplete="off" required></input>
-                      <input type="text" className="form-control" name="phone" placeholder="phone" autocomplete="off" required></input>
+                      <input type="text" className="form-control" name="Mail" placeholder="E-Mail" autocomplete="off" required value = {this.state.Mail} onChange = {this.onChangeMail}></input>
+                      <input type="text" className="form-control" name="Phone" placeholder="phone" autocomplete="off" required value = {this.state.Phone} onChange = {this.onChangePhone}></input>
                     </div>
                 </div>
 
                 <div className="form-group">
                     <div className="icon">
-                      <input type="text" className="form-control" name="message" placeholder="Type Your Message Here" autocomplete="off" required></input>
+                      <input type="text" className="form-control" name="Message" placeholder="Type Your Message Here" autocomplete="off" required value = {this.state.Message} onChange = {this.onChangeMessage}></input>
                     </div>
                 </div>
 

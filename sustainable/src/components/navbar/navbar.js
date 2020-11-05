@@ -44,7 +44,7 @@ export default class Navbar extends Component {
               {
 
                 this.state.showham?
-                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list-ul hamburger" onClick={()=>this.operation()}fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-list-ul hamburger" onClick={()=>this.operation()}fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path className="rw"fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
                 </svg>
                 :null
@@ -53,7 +53,7 @@ export default class Navbar extends Component {
 
               {
                 this.state.showx?
-                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x close" onClick={()=>this.operate()}
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-x closex" onClick={()=>this.operate()}
                   fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
                     <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
