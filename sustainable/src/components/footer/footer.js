@@ -10,6 +10,7 @@ export default class Footer extends Component {
                     <a href="/blog">Blog</a>
                     <a href="/birds">Birds</a>
                     <a href="/air-api">Air</a>
+                    <a href="/susgoals">Sustainable-goals</a>
                 
                 </div>
             </div>

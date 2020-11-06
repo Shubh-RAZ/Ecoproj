@@ -106,8 +106,8 @@ export default class CreateBlog extends Component {
     render() {
         return (
         <div className="crt-blog-cont">
-            <div style={{marginTop: 20}}>
-                <h3>Create New Todo</h3>
+                <div className="blog-background">   
+                <div className="create-blog-form">
                 <form onSubmit={this.onSubmit} encType="multipart/form-data">
                     <div className="form-group">
                         <label>Title: </label>
@@ -137,7 +137,7 @@ export default class CreateBlog extends Component {
                     </div>
 
                   
-                    <div className="form-group">
+                    <div className="form-group desp1">
                         <label>Description1 </label>
                         <input  type="text"
                                 className="form-control"
@@ -146,7 +146,7 @@ export default class CreateBlog extends Component {
                                 />
                     </div>
 
-                    <div className="form-group">
+                    <div className="form-group desp2">
                         <label>Description2 </label>
                         <input  type="text"
                                 className="form-control"
@@ -156,10 +156,11 @@ export default class CreateBlog extends Component {
                     </div>
                   
                     <div className="form-group">
-                        <input type="submit" value="Create Todo" className="btn btn-primary" />
+                        <input type="submit" value="Submit" className="btn btn-primary" />
                     </div>
                 </form>
-            </div>
+                </div>
+                </div>
         </div>
         )
     }

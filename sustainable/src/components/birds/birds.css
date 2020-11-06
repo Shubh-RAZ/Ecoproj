@@ -1,9 +1,16 @@
 .bird-rw{
     height:100vh;
-    background-image:url(expense4.png);
+    background-image:url(newtree.gif);
     background-repeat:No-repeat;
     background-size:100%;
-    
+    height: 99vh;
+}
+
+.animation{
+    z-index:10000;
+    width:100%;
+    position: relative;
+    right:20px;
 }
 
 .background{
