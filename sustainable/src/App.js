@@ -35,6 +35,7 @@ import Sdg14 from './components/sdg14';
 import Sdg15 from './components/sdg15';
 import Sdg16 from './components/sdg16';
 import Sdg17 from './components/sdg17';
+import cityapi from './components/city-api/city-api';
 
 
 export default class App extends Component {
@@ -75,6 +76,7 @@ export default class App extends Component {
           <Route path="/Sdg15" exact component={Sdg15}/>
           <Route path="/Sdg16" exact component={Sdg16}/>
           <Route path="/Sdg17" exact component={Sdg17}/>
+          <Route path="/cityapi" exact component={cityapi}></Route>
         </switch>
         
       </div>        

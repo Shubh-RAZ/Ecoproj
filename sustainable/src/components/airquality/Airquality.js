@@ -1,4 +1,9 @@
 import React from "react";
+import './airfront.css';
+import Cityapi from './../city-api/city-api';
+
+
+
 class Airquality extends React.Component {
   constructor(props) {
     super(props);
@@ -7,8 +12,12 @@ class Airquality extends React.Component {
       city: {},
       isLoaded: false,
       name : "",
+      value:{}
     };
   }
+  
+
+
 
   getAirquality (search) {
     fetch(
@@ -24,7 +33,7 @@ class Airquality extends React.Component {
           isLoaded: loaded,
           info: newInfo,
           city: newCity,
-          name : newName
+          name : newName,
         });
         console.log(newInfo);
         this.setState(newState);
@@ -40,7 +49,18 @@ class Airquality extends React.Component {
         this.getAirquality(this.props.search);
   }
 
+
+  
+
   render () {
+
+    const apivalue = this.state.info.aqi
+
+    this.setState({
+      value:apivalue
+    })
+
+    
     if (!this.state.isLoaded) {
       return <div>....Loading</div>;    
     } 
@@ -50,10 +70,16 @@ class Airquality extends React.Component {
     else {
       return (
         <div className="App">
-          <h1>
-            The AQI(Air Quality Index) in {this.state.name} is {this.state.info.aqi}{" "}
-            today.
-          </h1>
+          <div className="air-api-row">
+            <div className="air-api-info">
+              <div className="air-api-general air-mg"> AQI </div>
+              <div className="air-api-name "> Air Quality Index </div>
+              <div className="air-api-fetched air-mg "> {this.state.info.aqi}</div>
+            </div>
+            <div className={apivalue > 170 ? "api-bar-red" : "api-bar-green" }></div>
+      
+            
+          </div>
         </div>
       );
     }

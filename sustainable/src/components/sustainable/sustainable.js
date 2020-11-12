@@ -12,6 +12,7 @@ export default class Sustainable extends Component {
   render() {
     return (
       <div className="sus-row">
+
        
         <div class="row upr">
           <img className="img4" src="/front.png" alt="#"></img>

@@ -6,8 +6,9 @@ export default class Birds extends Component {
     render() {
         return (
             <div className="bird-rw">
+                <div className="api-button"> <a href="/cityapi">Lest's Get Started</a> </div>
               <div className="animation"> <BirdAnimation/> </div>  
-      
+              
                 
             </div>
         )

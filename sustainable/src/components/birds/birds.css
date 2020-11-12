@@ -6,6 +6,15 @@
     height: 99vh;
 }
 
+.api-button{
+    border:2px solid red;
+}
+
+.api-button a{
+    border:2px solid green;
+    cursor: pointer;
+}
+
 .animation{
     z-index:10000;
     width:100%;
