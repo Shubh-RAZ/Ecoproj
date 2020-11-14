@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/ecoproj/static/css/main.c5501aaf.chunk.css",
-    "main.js": "/ecoproj/static/js/main.da2aeb97.chunk.js",
-    "main.js.map": "/ecoproj/static/js/main.da2aeb97.chunk.js.map",
-    "runtime-main.js": "/ecoproj/static/js/runtime-main.b9bf831e.js",
-    "runtime-main.js.map": "/ecoproj/static/js/runtime-main.b9bf831e.js.map",
-    "static/css/2.1790a89c.chunk.css": "/ecoproj/static/css/2.1790a89c.chunk.css",
-    "static/js/2.a414845c.chunk.js": "/ecoproj/static/js/2.a414845c.chunk.js",
-    "static/js/2.a414845c.chunk.js.map": "/ecoproj/static/js/2.a414845c.chunk.js.map",
-    "index.html": "/ecoproj/index.html",
-    "static/css/2.1790a89c.chunk.css.map": "/ecoproj/static/css/2.1790a89c.chunk.css.map",
-    "static/css/main.c5501aaf.chunk.css.map": "/ecoproj/static/css/main.c5501aaf.chunk.css.map",
-    "static/js/2.a414845c.chunk.js.LICENSE.txt": "/ecoproj/static/js/2.a414845c.chunk.js.LICENSE.txt",
-    "static/media/city-api.css": "/ecoproj/static/media/city-api-back2.2a2aea6a.png",
-    "static/media/create-blog.css": "/ecoproj/static/media/createblog2.2b9b0787.gif",
-    "static/media/font-awesome.min.css": "/ecoproj/static/media/fontawesome-webfont.f691f37e.woff",
-    "static/media/birds.css": "/ecoproj/static/media/newtree.b8460354.gif"
+    "main.css": "/static/css/main.d5f413db.chunk.css",
+    "main.js": "/static/js/main.83413fa2.chunk.js",
+    "main.js.map": "/static/js/main.83413fa2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.08eb9847.js",
+    "runtime-main.js.map": "/static/js/runtime-main.08eb9847.js.map",
+    "static/css/2.b205885a.chunk.css": "/static/css/2.b205885a.chunk.css",
+    "static/js/2.0afcfc9d.chunk.js": "/static/js/2.0afcfc9d.chunk.js",
+    "static/js/2.0afcfc9d.chunk.js.map": "/static/js/2.0afcfc9d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.b205885a.chunk.css.map": "/static/css/2.b205885a.chunk.css.map",
+    "static/css/main.d5f413db.chunk.css.map": "/static/css/main.d5f413db.chunk.css.map",
+    "static/js/2.0afcfc9d.chunk.js.LICENSE.txt": "/static/js/2.0afcfc9d.chunk.js.LICENSE.txt",
+    "static/media/city-api.css": "/static/media/city-api-back2.2a2aea6a.png",
+    "static/media/create-blog.css": "/static/media/createblog2.2b9b0787.gif",
+    "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/birds.css": "/static/media/newtree.b8460354.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.b9bf831e.js",
-    "static/css/2.1790a89c.chunk.css",
-    "static/js/2.a414845c.chunk.js",
-    "static/css/main.c5501aaf.chunk.css",
-    "static/js/main.da2aeb97.chunk.js"
+    "static/js/runtime-main.08eb9847.js",
+    "static/css/2.b205885a.chunk.css",
+    "static/js/2.0afcfc9d.chunk.js",
+    "static/css/main.d5f413db.chunk.css",
+    "static/js/main.83413fa2.chunk.js"
   ]
 }
